@@ -4,120 +4,39 @@ L.mapbox.accessToken = 'pk.eyJ1IjoibXNwaWRlcnYiLCJhIjoiY2l0d3A5YWMzMDAydzJzbjJyb
 // Create a map in the div #map
 var map = L.mapbox.map('map', 'mapbox.streets');
 
+map.setView([48.14349658232668, 17.11167812347412], 14);
+
 function add(geojson) {
     return L.geoJson(geojson, {
         style: L.mapbox.simplestyle.style
     }).addTo(map);
 }
 
-add([
-    {"type":"Point","coordinates":[17.1065551632497,48.1424607737123]},
-    {"type":"Point","coordinates":[17.1075464541657,48.1425530856216]},
-    {"type":"Point","coordinates":[17.1141393696989,48.142913939674]},
-    {"type":"Point","coordinates":[17.1109803541708,48.1438016778002]},
-    {"type":"Point","coordinates":[17.1073905964639,48.1456194849995]},
-    {"type":"Point","coordinates":[17.1103757879846,48.1437991602661]},
-    {"type":"Point","coordinates":[17.1131170869056,48.141566178792]},
-    {"type":"Point","coordinates":[17.1078406524213,48.1424269659326]},
-    {"type":"Point","coordinates":[17.1153026879919,48.1404283710778]},
-    {"type":"Point","coordinates":[17.1103860287788,48.1428060433793]},
-    {"type":"Point","coordinates":[17.1056829889403,48.144181044799]},
-    {"type":"Point","coordinates":[17.1067515349708,48.1439327692259]},
-    {"type":"Point","coordinates":[17.1080839162002,48.142000770204]},
-    {"type":"Point","coordinates":[17.1067801912284,48.1452736948007]},
-    {"type":"Point","coordinates":[17.1065922636709,48.1446572725894]},
-    {"type":"Point","coordinates":[17.1038395561458,48.1427694784725]},
-    {"type":"Point","coordinates":[17.1092519955641,48.1434662452662]},
-    {"type":"Point","coordinates":[17.1089496226395,48.1434991532369]},
-    {"type":"Point","coordinates":[17.105626484909,48.1410332747836]},
-    {"type":"Point","coordinates":[17.1095752094034,48.1430240536031]},
-    {"type":"Point","coordinates":[17.1059022677012,48.1440914931011]},
-    {"type":"Point","coordinates":[17.1067643808794,48.1457455369054]},
-    {"type":"Point","coordinates":[17.1074379376794,48.1401043661119]},
-    {"type":"Point","coordinates":[17.1076433823849,48.142193547782]},
-    {"type":"Point","coordinates":[17.1073336432749,48.1430060709417]},
-    {"type":"Point","coordinates":[17.1083133459238,48.1430696695928]},
-    {"type":"Point","coordinates":[17.1075301946591,48.1450583914235]},
-    {"type":"Point","coordinates":[17.1074048796769,48.1431935698489]},
-    {"type":"Point","coordinates":[17.111576925351,48.1433237636999]},
-    {"type":"Point","coordinates":[17.1173430314967,48.1410562934737]},
-    {"type":"Point","coordinates":[17.1019860622201,48.1427407660109]},
-    {"type":"Point","coordinates":[17.1107513736049,48.1440521718243]},
-    {"type":"Point","coordinates":[17.1066086130091,48.1447849452422]},
-    {"type":"Point","coordinates":[17.1066139130693,48.1423601895079]},
-    {"type":"Point","coordinates":[17.1139789305892,48.1453170910291]},
-    {"type":"Point","coordinates":[17.1135367798063,48.1429364779825]},
-    {"type":"Point","coordinates":[17.1083730838902,48.1421155616661]},
-    {"type":"Point","coordinates":[17.1092399581393,48.1415795462792]},
-    {"type":"Point","coordinates":[17.1075511254052,48.1443027845073]},
-    {"type":"Point","coordinates":[17.1068783770889,48.1438362639107]},
-    {"type":"Point","coordinates":[17.1076935083777,48.1424055663158]},
-    {"type":"Point","coordinates":[17.1086359309423,48.1421814392614]},
-    {"type":"Point","coordinates":[17.1063753205298,48.1444146936743]},
-    {"type":"Point","coordinates":[17.1072184792555,48.141073737318]},
-    {"type":"Point","coordinates":[17.1118491148821,48.1418881364519]},
-    {"type":"Point","coordinates":[17.1068864619265,48.1436784383677]},
-    {"type":"Point","coordinates":[17.1078221471264,48.1446291605871]},
-    {"type":"Point","coordinates":[17.1136307435851,48.1445222868854]},
-    {"type":"Point","coordinates":[17.1080143865972,48.1459071921776]},
-    {"type":"Point","coordinates":[17.1133534336568,48.1413452850571]},
-    {"type":"Point","coordinates":[17.1061115751624,48.1449885614872]},
-    {"type":"Point","coordinates":[17.1086816551903,48.145873746301]},
-    {"type":"Point","coordinates":[17.1064386517573,48.1442190472796]},
-    {"type":"Point","coordinates":[17.1032986805132,48.1416516587176]},
-    {"type":"Point","coordinates":[17.1128957420196,48.1399172755416]},
-    {"type":"Point","coordinates":[17.1096490509197,48.1425242531534]},
-    {"type":"Point","coordinates":[17.1140625637421,48.144328978587]},
-    {"type":"Point","coordinates":[17.1142698949097,48.1424445891397]},
-    {"type":"Point","coordinates":[17.1063953529606,48.1418501921892]},
-    {"type":"Point","coordinates":[17.1119884435826,48.1421337844125]},
-    {"type":"Point","coordinates":[17.1069795273899,48.1436410948431]},
-    {"type":"Point","coordinates":[17.1145369640437,48.1414521653737]},
-    {"type":"Point","coordinates":[17.1098026628333,48.1430992810019]},
-    {"type":"Point","coordinates":[17.1089219545288,48.1427649827854]},
-    {"type":"Point","coordinates":[17.1168480597751,48.144345941794]},
-    {"type":"Point","coordinates":[17.107243721915,48.140819392294]},
-    {"type":"Point","coordinates":[17.1077677092202,48.1454431436776]},
-    {"type":"Point","coordinates":[17.1095049611481,48.1406551433646]},
-    {"type":"Point","coordinates":[17.1067430908071,48.1440400637421]},
-    {"type":"Point","coordinates":[17.1065524683038,48.1453073808264]},
-    {"type":"Point","coordinates":[17.1112155331122,48.1415247575426]},
-    {"type":"Point","coordinates":[17.1058958896627,48.1452441445855]},
-    {"type":"Point","coordinates":[17.1109330129553,48.1408707649352]},
-    {"type":"Point","coordinates":[17.1172387370922,48.1450477820745]},
-    {"type":"Point","coordinates":[17.106368044176,48.143116784094]},
-    {"type":"Point","coordinates":[17.1081571288959,48.1450647450439]},
-    {"type":"Point","coordinates":[17.1062805482673,48.1413049426251]},
-    {"type":"Point","coordinates":[17.1060300081346,48.141666285002]},
-    {"type":"Point","coordinates":[17.1080897552495,48.1431683942042]},
-    {"type":"Point","coordinates":[17.1157718780648,48.1414459911382]},
-    {"type":"Point","coordinates":[17.1175671611601,48.1411003526566]},
-    {"type":"Point","coordinates":[17.1057078722737,48.1414892707148]},
-    {"type":"Point","coordinates":[17.1062197323226,48.1420799553602]},
-    {"type":"Point","coordinates":[17.1085584961648,48.1413631484121]},
-    {"type":"Point","coordinates":[17.1065858856324,48.1445987708359]},
-    {"type":"Point","coordinates":[17.109178693037,48.1424513626836]},
-    {"type":"Point","coordinates":[17.107831938763,48.1426451575943]},
-    {"type":"Point","coordinates":[17.1161353364287,48.1447074425852]},
-    {"type":"Point","coordinates":[17.1128783147031,48.1422061358449]},
-    {"type":"Point","coordinates":[17.1176365111,48.1443345530691]},
-    {"type":"Point","coordinates":[17.106832652841,48.1447179920644]},
-    {"type":"Point","coordinates":[17.1115265298635,48.1416942787396]},
-    {"type":"Point","coordinates":[17.1077902569338,48.1436865904015]},
-    {"type":"Point","coordinates":[17.1074585090994,48.1456038408754]},
-    {"type":"Point","coordinates":[17.1066244233581,48.1418447373245]},
-    {"type":"Point","coordinates":[17.1145436115768,48.1439074740614]},
-    {"type":"Point","coordinates":[17.1174996078507,48.1418986865105]},
-    {"type":"Point","coordinates":[17.1063896935744,48.1428637679252]},
-    {"type":"Point","coordinates":[17.1054078349688,48.144380647419]},
-    {"type":"Point","coordinates":[17.1110360497184,48.144088076467]},
-    {"type":"Point","coordinates":[17.1142120434054,48.144341086601]},
-    {"type":"Point","coordinates":[17.1062726430928,48.141992258242]},
-    {"type":"Point","coordinates":[17.1081647645758,48.1425917486771]},
-    {"type":"Point","coordinates":[17.1076072701104,48.1418808832854]},
-    {"type":"Point","coordinates":[17.107095140567,48.1442345719442]},
-    {"type":"Point","coordinates":[17.1020581969374,48.1445882812726]},
-    {"type":"Point","coordinates":[17.1115305722823,48.1442983488952]},
-    {"type":"Point","coordinates":[17.1075719663198,48.1425204767583]},
-    {"type":"Point","coordinates":[17.1077597142142,48.1418972478663]}
-]);
+/*add({
+    "type": "Feature",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [[0.29,0.84],[0.28,0.84],[0.29,0.84],[0.28,0.84],[0.29,0.84],[0.28,0.84],[0.29,0.84],[0.28,0.84],[0.28,0.83],[0.29,0.83],[0.28,0.83],[0.28,0.84],[0.28,0.83],[0.28,0.84]]
+    },
+    "properties": {
+      "stroke": "yellow",
+      "stroke-width": 5
+    }
+});*/
+
+/*add({
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [0.29, 0.84]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
+});*/
+
+$(function() {
+  $.getJSON('http://127.0.0.1/api/test', {}, function(data, textStatus, jqXHR) {
+    add(data);
+  });
+});
