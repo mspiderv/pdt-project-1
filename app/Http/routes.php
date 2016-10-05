@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
+});
+
+Route::group(['prefix' => 'api'], function() {
+    Route::get('test', ['uses' => 'GeoController@test']);
 });
