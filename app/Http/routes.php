@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'api'], function() {
-    Route::get('test', ['uses' => 'GeoController@test']);
+    Route::controller('features', 'FeaturesController');
 });
