@@ -4,7 +4,7 @@
 ```
 $ git clone https://github.com/mspiderv/pdt-project-1
 $ cd pdt-project-1
-$ sudo chmod a+x ./install
+$ sudo chmod a+x ./install.sh
 $ sudo ./install.sh
 ```
 
