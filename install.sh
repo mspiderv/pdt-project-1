@@ -1,5 +1,5 @@
-sudo chmod -R a-w storage/
-sudo chmod -R a-w bootstrap/cache/
+sudo chmod -R 777 storage/
+sudo chmod -R 777 bootstrap/cache/
 cp .env.example .env
 composer install
 php artisan key:generate
