@@ -25,7 +25,7 @@ Logika backendu je v súbore [`app/Http/Controllers/FeaturesController.php`](htt
     - vráti polygóny mestských častí
 
 ## Zdroj dát
-https://www.openstreetmap.org
+[OpenStreetMap](https://www.openstreetmap.org)
 
 ## Inštalácia
 ```
