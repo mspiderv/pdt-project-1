@@ -3,7 +3,8 @@
 ## O čo ide
 Aplikácia je určená na pomoc pri každodenných vybavovačkách v meste. Zadajte svoju polohu, zvoľte čo chcete vybaviť (banka, pošta a nakoniec pivo) a aplikácia zistí najvhodnejšiu trasu. Tiež je mžoné zorbazovať kaviarne, krčmy, lekárne v okolí. Všetko je možné filtrovať na základe mestských častí.
 
-![alt text](./screen.png "Logo Title Text 1")
+![alt text](./screen1.png "Screen 1")
+![alt text](./screen2.png "Screen 2")
 
 ## Architektúra
 Aplikácia je vytvorená ako webová aplikácia pozostávajúca z dvoje komunikujúcich súčastí: frontendu a backendu. Komunikujú pomocou REST JSON.
